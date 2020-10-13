@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OdukaleCheckoutActivity"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/mainHeader"
+        android:layout_marginTop="@dimen/margins"
+        android:text="@string/checkOutScreen"
+        android:textSize="@dimen/mainHeaderTextSize" />
+
+    <TextView
+        style="@style/middleHeader"
+        android:text="@string/finalOption"/>
+
+    <RadioGroup
+        android:id="@+id/odukaleRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/radioButtonMargin"
+        android:orientation="vertical">
+
+    </RadioGroup>
+
+    <TextView
+        style="@style/middleHeader"
+        android:text="@string/paymentOption"/>
+
+    <RadioGroup
+        android:id="@+id/odukalePaymentOptionRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/radioButtonMargin"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/odukaleCashRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/middleSize"
+            android:layout_marginTop="10dp"
+            android:text="@string/cash"
+            />
+        <RadioButton
+            android:id="@+id/odukaleCreditCardRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/middleSize"
+            android:layout_marginTop="10dp"
+            android:text="@string/creditCard"
+            />
+        <RadioButton
+            android:id="@+id/odukaleDebitCardRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/middleSize"
+            android:layout_marginTop="10dp"
+            android:text="@string/debitCard"
+            />
+
+    </RadioGroup>
+
+    <Button
+        style="@style/enterButton"
+        android:text="@string/nextButton"
+        android:id="@+id/odukaleCheckoutButton"
+        />
+
+</LinearLayout>

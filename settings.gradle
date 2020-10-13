@@ -1,0 +1,2 @@
+include ':odukale2'
+rootProject.name = "OdukaleLab2"

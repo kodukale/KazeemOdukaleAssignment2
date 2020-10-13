@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OdukaleDetachedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            style="@style/mainHeader"
+            android:text="@string/detached"
+            android:textSize="@dimen/middleSize"
+            android:layout_marginTop="@dimen/paddings"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/imageSize"
+                android:layout_height="@dimen/imageSize"
+                android:layout_marginLeft="@dimen/paddings"
+                android:src="@drawable/image10"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/paddings">
+
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString1Addr"
+                    />
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString1Desc"
+                    />
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString1Price"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/odukaleDetachedCheckBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/paddings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/imageSize"
+                android:layout_height="@dimen/imageSize"
+                android:layout_marginLeft="@dimen/paddings"
+                android:src="@drawable/image6"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/paddings">
+
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString2Addr"
+                    />
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString2Desc"
+                    />
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString2Price"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/odukaleDetachedCheckBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/paddings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/imageSize"
+                android:layout_height="@dimen/imageSize"
+                android:layout_marginLeft="@dimen/paddings"
+                android:src="@drawable/image7"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/paddings">
+
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString3Addr"
+                    />
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString3Desc"
+                    />
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString3Price"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/odukaleDetachCheckBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/paddings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/imageSize"
+                android:layout_height="@dimen/imageSize"
+                android:layout_marginLeft="@dimen/paddings"
+                android:src="@drawable/image8"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/paddings">
+
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString4Addr"
+                    />
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString4Desc"
+                    />
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString4Price"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/odukaleDetachCheckBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/paddings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/imageSize"
+                android:layout_height="@dimen/imageSize"
+                android:layout_marginLeft="@dimen/paddings"
+                android:src="@drawable/image10"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/paddings">
+
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString5Addr"
+                    />
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString5Desc"
+                    />
+                <TextView
+                    style="@style/apartmentDetails"
+                    android:text="@string/detachedString5Price"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/odukaleDetachCheckBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/paddings"/>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/enterButton"
+            android:text="@string/nextButton"
+            android:id="@+id/odukaleDetachNextButton"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

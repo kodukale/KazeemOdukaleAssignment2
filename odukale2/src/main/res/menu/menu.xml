@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/odukaleAppartment"
+        android:title="@string/apartment">
+
+    </item>
+    <item
+        android:id="@+id/odukaleDetachedHomes"
+        android:title="@string/detached">
+
+    </item>
+    <item
+        android:id="@+id/odukaleSemiDetached"
+        android:title="@string/semiDetached">
+
+    </item>
+
+    <item
+        android:id="@+id/odukaleCondominium"
+        android:title="@string/condominium">
+
+    </item>
+
+    <item
+        android:id="@+id/odukaleTownHouse"
+        android:title="@string/townHouse">
+
+    </item>
+</menu>
