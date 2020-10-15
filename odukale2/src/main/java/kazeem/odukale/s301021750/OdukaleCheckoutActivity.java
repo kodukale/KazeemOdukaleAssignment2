@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,13 +20,13 @@ public class OdukaleCheckoutActivity extends AppCompatActivity {
     ArrayList<String> recievedIntent;
     RadioGroup radioGroup;
     Button nextCheckoutButton;
-    ArrayList<String> checkoutDetails = new ArrayList<>();
+    RadioButton selectedApartment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_odukale_checkout);
-        recievedIntent = getIntent().getStringArrayListExtra("selectedApt");
+        recievedIntent = (ArrayList<String>) getIntent().getSerializableExtra("selectedApt");
         radioGroup = findViewById(R.id.odukaleRadioGroup);
         getApartmentType(recievedIntent);
 
@@ -37,9 +38,9 @@ public class OdukaleCheckoutActivity extends AppCompatActivity {
                 RadioButton rCC = (RadioButton) findViewById(R.id.odukaleCreditCardRbtn);
                 RadioButton rbDC = findViewById(R.id.odukaleDebitCardRbtn);
                 if (rCC.isChecked()) {
-                    checkoutDetails.add("Credit Card");
+                    recievedIntent.add(getResources().getString(R.string.ccCard));
                 } else if (rbDC.isChecked()) {
-                    checkoutDetails.add("Debit Card");
+                    recievedIntent.add(getResources().getString(R.string.dcCard));
                 }
                 else { }
             }
@@ -50,8 +51,12 @@ public class OdukaleCheckoutActivity extends AppCompatActivity {
         radioGroupSelectedApt.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                RadioButton selectedApartment = findViewById(checkedId);
-                checkoutDetails.add(selectedApartment.getText().toString());
+                selectedApartment = findViewById(checkedId);
+                if(selectedApartment == null) {
+                    Toast.makeText(getApplicationContext(), "Please select an apartment", Toast.LENGTH_LONG).show();
+                    return;
+                }
+                recievedIntent.add(selectedApartment.getText().toString());
             }
         });
 
@@ -61,7 +66,7 @@ public class OdukaleCheckoutActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(OdukaleCheckoutActivity.this, OdukalePaymentActivity.class);
-                intent.putExtra("checkoutKey", checkoutDetails);
+                intent.putExtra("checkoutKey", recievedIntent);
                 startActivity(intent);
             }
         });

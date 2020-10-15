@@ -15,13 +15,13 @@
             style="@style/mainHeader"
             android:text="@string/mainHeader"
             android:textSize="@dimen/mainHeaderTextSize"
-            android:layout_margin="@dimen/mainHeaderMagin"/>
+            android:layout_margin="@dimen/middleSize"/>
 
         <ImageView
             android:id="@+id/odukaleImageView"
             android:layout_width="@dimen/logoWidth"
             android:layout_height="@dimen/logoWidth"
-            android:layout_marginBottom="@dimen/margins"
+            android:layout_marginBottom="@dimen/middleSize"
             tools:src="@drawable/image8"
             android:layout_gravity="center"/>
 

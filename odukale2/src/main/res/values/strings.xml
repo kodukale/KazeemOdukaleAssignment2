@@ -5,6 +5,7 @@
     <string name="enterButton">Enter</string>
     <string name="paymentOption">Select your payment option:</string>
     <string name="finalOption">Select the house you want:</string>
+    <string name="fullname">Full Name</string>
 
     <string name="apartment">Apartments</string>
     <string name="detached">Detached Homes</string>
@@ -97,4 +98,32 @@
     <string name="cash">Cash</string>
     <string name="creditCard">Credit Card</string>
     <string name="debitCard">Debit Card</string>
+    <string name="cust_information">Customer Information</string>
+    <string name="cardNumber">Credit/Debit Card number</string>
+    <string name="ccv">CCV</string>
+    <string name="addressOutput">Address and Price</string>
+    <string name="creditCardOutput">Credit Card Number</string>
+    <string name="ccvNumber">CCV number</string>
+    <string name="favoritSport">Favorite Sport</string>
+    <string name="finalMessage">Than you for your patronage</string>
+    <string name="exitApp">Are you sure you want to exit this app</string>
+    <string name="exit_app">Exit App</string>
+    <string name="ccCard">Credit Card</string>
+    <string name="dcCard">Debit Card</string>
+
+    <string-array name="favoriteSport">
+        <item>Soccer</item>
+        <item>Table Tennis</item>
+        <item>Gymnastics</item>
+        <item>Wrestling</item>
+        <item>Swimming</item>
+    </string-array>
+
+    <string-array name="favoriteFood">
+        <item>Cheese</item>
+        <item>Bread and butter</item>
+        <item>Iyan and egusi</item>
+        <item>Spagetti</item>
+        <item>Cokies and milk</item>
+    </string-array>
 </resources>

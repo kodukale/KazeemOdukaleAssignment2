@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OdukaleOutputActivity"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/middleHeader"
+        android:text="Your rent details is as follows"
+        android:layout_marginBottom="@dimen/margins"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/paddings"
+        >
+        <TableRow>
+            <TextView
+                style="@style/outputText"
+                android:text="@string/fullname"
+                />
+            <TextView
+                style="@style/outputText2"
+                android:id="@+id/OdukaleFullnameOutput"
+                android:layout_weight="6"
+
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/outputText"
+                android:text="@string/addressOutput"
+                />
+            <TextView
+                style="@style/outputText2"
+                android:id="@+id/OdukaleAddrOutput"
+                android:layout_weight="6"
+
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/outputText"
+                android:text="@string/creditCardOutput"
+                />
+            <TextView
+                style="@style/outputText2"
+                android:id="@+id/OdukaleCreditCardOutput"
+                android:layout_weight="6"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/outputText"
+                android:text="@string/ccvNumber"
+                />
+            <TextView
+                style="@style/outputText2"
+                android:id="@+id/OdukaleCCVOutput"
+                android:layout_weight="6"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/outputText"
+                android:text="Payment Type"
+                />
+            <TextView
+                style="@style/outputText2"
+                android:id="@+id/OdukalePaymentTypeOutput"
+                android:layout_weight="6"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/outputText"
+                android:text="@string/favoritSport"
+                />
+            <TextView
+                style="@style/outputText2"
+                android:id="@+id/OdukaleSportOutput"
+                android:layout_weight="6"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/outputText"
+                android:text="Favorite Food"
+                />
+            <TextView
+                style="@style/outputText2"
+                android:id="@+id/OdukaleFoodOutput"
+                android:layout_weight="6"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        style="@style/finalMessage"
+        />
+
+</LinearLayout>

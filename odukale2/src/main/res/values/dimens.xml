@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="mainHeaderTextSize">25sp</dimen>
-    <dimen name="logoWidth">300dp</dimen>
-    <dimen name="logoHeight">300dp</dimen>
+    <dimen name="logoWidth">250dp</dimen>
     <dimen name="margins">30dp</dimen>
     <dimen name="paddings">10dp</dimen>
     <dimen name="desTextSize">15dp</dimen>
